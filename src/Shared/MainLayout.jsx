@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../Component/Navbar";
 import Spinner from "../Component/Spinner/Spinner";
+import Footer from "../Component/Footer";
 
 const MainLayout = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ const MainLayout = () => {
       <div className="min-h-[76vh]">
         <Outlet />
       </div>
+      <Footer />
     </div>
   );
 };

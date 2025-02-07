@@ -2,6 +2,7 @@ import BlogHelmet from "./BlogHelmet";
 import { useState } from "react";
 import SearchBlog from "./SearchBlog";
 import HomeBlogs from "../Pages/HomeBlogs";
+import LatestNews from "./LatestNews";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -15,6 +16,7 @@ const Home = () => {
         <BlogHelmet title="Home" />
         <SearchBlog onSearch={handleSearch} />
         <HomeBlogs searchTerm={searchQuery} />
+        <LatestNews />
       </div>
     </>
   );

@@ -11,6 +11,7 @@ const Home = () => {
   const handleSearch = (query) => {
     setSearchQuery(query);
   };
+  
   return (
     <>
       <div className="max-w-[1200px] 2xl:max-w-[85%] mx-auto">

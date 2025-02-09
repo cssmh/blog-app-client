@@ -3,6 +3,7 @@ import { useState } from "react";
 import SearchBlog from "./SearchBlog";
 import HomeBlogs from "../Pages/HomeBlogs";
 import LatestNews from "./LatestNews";
+import StartBlogging from "./StartBlogging";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -18,6 +19,7 @@ const Home = () => {
         <HomeBlogs searchTerm={searchQuery} />
         <LatestNews />
       </div>
+      <StartBlogging />
     </>
   );
 };

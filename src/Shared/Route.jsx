@@ -4,6 +4,8 @@ import Home from "../Component/Home";
 import Error from "../Component/Error";
 import Login from "../Component/Login";
 import Register from "../Component/Register";
+import PrivateRoute from "./PrivateRoute";
+import WriteBlog from "../Pages/WriteBlog";
 
 const Route = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ const Route = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },
+      {
+        path: "/write-blog",
+        element: (
+          <PrivateRoute>
+            <WriteBlog />
+          </PrivateRoute>
+        ),
+      },
     ],
   },
 ]);

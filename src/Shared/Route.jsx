@@ -7,6 +7,7 @@ import Register from "../Component/Register";
 import PrivateRoute from "./PrivateRoute";
 import WriteBlog from "../Pages/WriteBlog";
 import BlogDetails from "../Pages/BlogDetails";
+import MyProfile from "../Component/MyProfile";
 
 const Route = createBrowserRouter([
   {
@@ -27,7 +28,15 @@ const Route = createBrowserRouter([
       },
       {
         path: "/blog/:id",
-        element: <https://youtu.be/np65GSMRkac?si=7CdzIe746jnEDmOh />,
+        element: <BlogDetails />,
+      },
+      {
+        path: "/my-profile",
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        ),
       },
     ],
   },

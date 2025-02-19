@@ -1,17 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "./MainLayout";
-import AllBlogs from "../Pages/AllBlogs";
 import Home from "../Component/Home";
-import Error from "../Component/Error";
 import Login from "../Component/Login";
 import Register from "../Component/Register";
-import PrivateRoute from "./PrivateRoute";
+import Error from "../Component/Error";
 import WriteBlog from "../Pages/WriteBlog";
-import BlogDetails from "../Pages/BlogDetails";
+import PrivateRoute from "./PrivateRoute";
 import MyProfile from "../Component/MyProfile";
 import MyBlogs from "../Pages/MyBlogs";
-import EditBlog from "../Pages/EditBlog";
+import BlogDetails from "../Pages/BlogDetails";
 import { getBlog } from "../Api/Blog";
+import EditBlog from "../Pages/EditBlog";
+import AllBlogs from "../Pages/AllBlogs";
 
 const Route = createBrowserRouter([
   {

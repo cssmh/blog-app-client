@@ -1,9 +1,9 @@
-import BlogHelmet from "./BlogHelmet";
 import { useState } from "react";
-import SearchBlog from "./SearchBlog";
 import HomeBlogs from "../Pages/HomeBlogs";
-import LatestNews from "./LatestNews";
+import BlogHelmet from "./BlogHelmet";
 import StartBlogging from "./StartBlogging";
+import LatestNews from "./LatestNews";
+import SearchBlog from "./SearchBlog";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -11,7 +11,7 @@ const Home = () => {
   const handleSearch = (query) => {
     setSearchQuery(query);
   };
-  
+
   return (
     <>
       <div className="max-w-[1200px] 2xl:max-w-[85%] mx-auto">

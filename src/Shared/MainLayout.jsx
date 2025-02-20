@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../Component/Navbar";
-import Spinner from "../Component/Spinner/Spinner";
 import Footer from "../Component/Footer";
+import Spinner from "../Component/Spinner/Spinner";
 
 const MainLayout = () => {
   const [isLoading, setIsLoading] = useState(true);

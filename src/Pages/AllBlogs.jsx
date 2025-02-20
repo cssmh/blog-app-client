@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { getAllBlogs } from "../Api/Blog";
 import BlogCard from "./BlogCard";
 import BlogCardSkeleton from "./BlogCardSkeleton";
 import BlogHelmet from "../Component/BlogHelmet";
+import { getAllBlogs } from "../Api/Blog";
 
 const AllBlogs = () => {
   const [blogs, setBlogs] = useState([]);
